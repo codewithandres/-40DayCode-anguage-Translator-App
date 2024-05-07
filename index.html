@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator App | Dize Design</title>
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="main.css">
+    <!-- custom js -->
+    <script type="module" src="app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapprt">
+            <div class="input-area">
+                <textarea id="" class="from-text" placeholder="Enter Text"></textarea>
+                <textarea id="" class="from-to" placeholder="traslation" readonly disabled></textarea>
+            </div>
+            <ul class="controls">
+                <li class="row from">
+                    <div class="icons">
+                        <i class="ri-volume-up-fill"></i>
+                        <i class="ri-file-copy-line"></i>
+                    </div>
+                    <select id="">
+                        <option value="es-US">English</option>
+                        <option value="hi-IN">Hindi</option>
+                        <option value="ne-NP">Nepal</option>
+                    </select>
+                </li>
+                <i class="ri-arrow-left-right-fill"></i>
+                <li class="row from">
+                    <select id="">
+                        <option value="ne-NP">Nepal</option>
+                        <option value="es-US">English</option>
+                        <option value="hi-IN">Hindi</option>
+                    </select>
+                    <div class="icons">
+                        <i class="ri-volume-up-fill"></i>
+                        <i class="ri-file-copy-line"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button>Translate Text</button>
+    </div>
+</body>
+
+
+</html>
