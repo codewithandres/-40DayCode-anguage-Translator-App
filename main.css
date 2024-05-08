@@ -16,3 +16,107 @@
         "wdth" 100;
     font-family: var(--font-openSans);
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    background-color: hsl(214, 41%, 3%);
+    color: hsl(0, 60%, 95%);
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: hsl(218, 22%, 7%);
+    border-radius: .5rem;
+    padding: 2.5em;
+}
+
+.wrapper {
+    border-radius: .5rem;
+    box-shadow: hsla(0, 0%, 65%, 0.02) 0px 1px 3px 0px, hsla(211, 16%, 59%, 0.15) 0px 0px 0px 1px;
+}
+
+.wrapper .text-input {
+    display: flex;
+    /* border-bottom: 1px solid hsla(0, 0%, 80%, 0.555); */
+}
+
+.text-input textarea {
+    width: 100%;
+    min-height: 250px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: hsla(0, 0%, 65%, 0.02) 0px 1px 3px 0px, hsla(211, 16%, 59%, 0.15) 0px 0px 0px 1px;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    color: inherit;
+    resize: none;
+    /* border-radius: .5rem; */
+
+    &:nth-child(1) {
+        border-top-left-radius: .5rem;
+    }
+
+    &:nth-child(2) {
+        border-top-right-radius: .5rem;
+    }
+}
+
+.controls,
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.controls {
+    list-style: none;
+    padding: 12px 5px;
+    background-color: hsl(207, 23%, 8%);
+    ;
+}
+
+.controls .icons i {
+    padding: 0 10px;
+    color: #9f9f9f;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.controls .row select {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: #9f9f9f;
+
+    option {
+        background-color: hsl(218, 22%, 7%);
+    }
+}
+
+.controls .ri-arrow-left-right-fill {
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    border-radius: .5rem;
+    font-size: 1rem;
+    color: hsl(0, 60%, 95%);
+    cursor: pointer;
+    background-color: hsl(221, 100%, 39%);
+    font-family: inherit;
+}
