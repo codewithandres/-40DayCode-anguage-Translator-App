@@ -1,4 +1,4 @@
-![Logo de mi proyecto](https://github.com/dizedesign/-40DayCode-anguage-Translator-App/blob/main/bandicam%202024-05-08%2022-01-34-562.jpg)
+![Logo de mi proyecto](./bandicam%202024-05-09%2007-38-07-306.jpg)
 
 # Traductor de Texto
 

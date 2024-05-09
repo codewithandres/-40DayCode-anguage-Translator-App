@@ -31,6 +31,7 @@ const selectTag = document.querySelectorAll('select'),
 
 // Evento de click para el botón de traducción
 traslateButtom.addEventListener('click', async () => {
+    toText.setAttribute('placeholder', 'Traducinedo ....')
     let text = fromText.value,
         traslateFrom = selectTag[0].value,
         translateTo = selectTag[1].value;
@@ -38,7 +39,6 @@ traslateButtom.addEventListener('click', async () => {
     const apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${traslateFrom}|${translateTo}`;
 
     trasnlate(apiUrl);
-    toText.setAttribute('placeholder', 'Traducinedo ....')
 
 });
 
