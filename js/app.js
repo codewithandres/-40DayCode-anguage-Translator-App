@@ -18,7 +18,7 @@ const selectTag = document.querySelectorAll('select'),
 
         if (id === 0 && contries_code === 'en-GB') {
             selected = 'selected';
-        } else if (id === 1 && contries_code === 'hi-IN') {
+        } else if (id === 1 && contries_code === 'es-ES') {
             selected = 'selected';
         };
 
@@ -35,7 +35,7 @@ traslateButtom.addEventListener('click', async () => {
         traslateFrom = selectTag[0].value,
         translateTo = selectTag[1].value;
     if (!text) return;
-    const apiUrl = `https://api.mymemory.translated.net/get?q=${text} World!&langpair=${traslateFrom}|${translateTo}`;
+    const apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${traslateFrom}|${translateTo}`;
 
     trasnlate(apiUrl);
     toText.setAttribute('placeholder', 'Traducinedo ....')
@@ -77,7 +77,7 @@ exchangeIcon.addEventListener('click', () => {
 
 // Función de traducción
 const trasnlate = async (urlFech) => {
-
+    traslateButtom.textContent = `Traduciendo..`;
     try {
 
         const response = await fetch(urlFech);
@@ -89,4 +89,5 @@ const trasnlate = async (urlFech) => {
     } catch (error) {
         console.log(error)
     }
+    traslateButtom.textContent = `Translate Text`;
 };
