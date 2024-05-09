@@ -1,4 +1,4 @@
-https://github.com/dizedesign/-40DayCode-anguage-Translator-App/blob/main/bandicam%202024-05-08%2022-01-34-562.jpg?raw=true
+!Texto https://github.com/dizedesign/-40DayCode-anguage-Translator-App/blob/main/bandicam%202024-05-08%2022-01-34-562.jpg?raw=true
 # Traductor de Texto
 
 Este es un simple traductor de texto construido con JavaScript. Utiliza la API de traducción de MyMemory para traducir texto de un idioma a otro.
