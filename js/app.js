@@ -1,5 +1,7 @@
+// Importamos los códigos de los países desde el archivo contries.js
 import { countries } from "./contries.js";
 
+// Seleccionamos los elementos necesarios del DOM
 const selectTag = document.querySelectorAll('select'),
     traslateButtom = document.querySelector('button'),
     fromText = document.querySelector('.from-text'),
@@ -7,6 +9,7 @@ const selectTag = document.querySelectorAll('select'),
     exchangeIcon = document.querySelector('i.ri-arrow-left-right-fill'),
     icons = document.querySelectorAll('.row i');
 
+// Rellenamos los selectores con los códigos de los países
 [...selectTag].map((tag, id) => {
     for (const contries_code in countries) {
 
@@ -26,6 +29,7 @@ const selectTag = document.querySelectorAll('select'),
     };
 });
 
+// Evento de click para el botón de traducción
 traslateButtom.addEventListener('click', async () => {
     let text = fromText.value,
         traslateFrom = selectTag[0].value,
@@ -38,6 +42,7 @@ traslateButtom.addEventListener('click', async () => {
 
 });
 
+// Evento de click para el icono de intercambio
 exchangeIcon.addEventListener('click', () => {
     let temText = fromText.value,
         temLag = selectTag[0].value;
@@ -47,6 +52,7 @@ exchangeIcon.addEventListener('click', () => {
     selectTag[1].value = temLag;
 });
 
+// Eventos de click para los iconos
 [...icons].map(icon => {
     icon.addEventListener('click', ({ target }) => {
         if (target.classList.contains('ri-file-copy-line')) {
@@ -69,6 +75,7 @@ exchangeIcon.addEventListener('click', () => {
     });
 });
 
+// Función de traducción
 const trasnlate = async (urlFech) => {
 
     try {
